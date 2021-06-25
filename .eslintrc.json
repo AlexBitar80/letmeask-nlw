@@ -28,6 +28,7 @@
     "prettier"
   ],
   "rules": {
+    "no-useless-return": "off",
     "no-shadow": "off",
     "react/jsx-curly-brace-presence": "off",
     "react/jsx-props-no-spreading": "off",
