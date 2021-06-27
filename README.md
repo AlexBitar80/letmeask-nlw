@@ -1,46 +1,84 @@
-# Getting Started with Create React App
+![Logo](https://user-images.githubusercontent.com/56983783/123552822-59444780-d74e-11eb-88d1-31143874c1e0.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Letmeask - perguntas e respostas
 
-## Available Scripts
+![GitHub watchers](https://img.shields.io/github/watchers/AlexBitar80/letmeask-nlw?style=social)  ![GitHub repo size](https://img.shields.io/github/repo-size/AlexBitar80/letmeask-nlw) ![GitHub Repo star](https://img.shields.io/github/stars/AlexBitar80/letmeask-nlw?style=social) ![GitHub Repo license](https://img.shields.io/github/license/AlexBitar80/letmeask-nlw) ![GitHub language count](https://img.shields.io/github/languages/count/AlexBitar80/letmeask-nlw) ![GitHub last commit](https://img.shields.io/github/last-commit/AlexBitar80/letmeask-nlw)
 
-In the project directory, you can run:
+Projeto desenvolvido durante a 6° da Next Level Week evento da Rocketseat.
 
-### `yarn start`
+O letmeask é uma aplicação onde o usuário pode logar utilizando sua conta do Google, criar uma sala, e disponibilizar o código desta sala para outras pessoas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Estas pessoas podem acessar a sala para fazer perguntas, visualizar e marcar como gostei perguntas feitas por outros participantes da sala, e o administrador da sala pode visualizar as perguntas em tempo real.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Não é necessário estar logado para visualizar as perguntas de outros participantes, mas caso queira fazer uma pergunta, será necessário.
 
-### `yarn test`
+## :rainbow: Tecnologias usadas nessa aplicação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-  [typescript](https://www.typescriptlang.org/)
+-  [react.js](https://pt-br.reactjs.org/)
+-  [create-react-app](https://create-react-app.dev/)
+-  [react-router-dom](https://reactrouter.com/web/guides/quick-start)
+-  [sass](https://sass-lang.com/)
+-  [firebase](https://firebase.google.com/?hl=pt)
 
-### `yarn build`
+## :rocket: Tela inicial da aplicação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Tela inicial1 da aplicação](https://user-images.githubusercontent.com/56983783/123552708-aecc2480-d74d-11eb-80cf-a4a8033a064c.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :man_mechanic:  Como rodar a aplicação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para rodar esta aplicação você vai precisar do [Node](https://nodejs.org/en/), do [Git](https://git-scm.com/) e do [yarn](https://yarnpkg.com/) ou npm, que por padrão já vem com o Node.
 
-### `yarn eject`
+Clone o projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+git clone https://github.com/AlexBitar80/letmeask-nlw letmeask
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Vá até a pasta do projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+cd letmeask
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Instale as dependências
 
-## Learn More
+```bash
+npm install | yarn
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Rode o projeto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run start | yarn start
+```
+
+A aplicação está utilizando o firebase, para que ele funcione será necessário alguns passos.
+
+- Vá até o [firebase](https://firebase.google.com/) (Será necessário ter uma conta do google para isso)
+- No canto superior direito vá em ***Ir para o console***
+- Clique em ***Adicionar novo projeto***
+- Clique na engrenagem ao lado de ***Visão geral do projeto*** e vá em ***Configurações do projeto***
+- Em geral role até a parte ***Configuração do SDK***
+- selecione ***Configurações*** em vez de ***CDN***
+
+No projeto crie um novo arquivo na raiz chamado ***.env.local*** Nesse formato,
+substitua as informações com base nas que aparecem para você.
+
+
+### :file_folder: Formato do arquivo
+```bash
+# FIREBASE
+
+REACT_APP_API_KEY=""
+REACT_APP_AUTH_DOMAIN=""
+REACT_APP_DATABASE_URL=""
+REACT_APP_PROJECT_ID=""
+REACT_APP_STORAGE_BUCKET=""
+REACT_APP_MESSAGING_SENDER_ID=""
+REACT_APP_APP_ID=""
+```
+
+## :pushpin: Licença
+
+Este projeto está sob a licença MIT [LICENSE](https://github.com/AlexBitar80/letmeask-nlw/blob/master/LICENSE) para mais detalhes.
